@@ -19,7 +19,13 @@ public class FormulaCalculatorTest {
 	@Test(dataProvider = "dpPositive")
 	public void testPositiveCalculate(double a, double b, double c, double expected) {
 		assertEquals(new FormulaCalculator(a, b, c).calculate(), expected, 0.01);
-
 	}
+	
+//	@Test(dataProvider = "dpPositive")
+//	public void testFormulaCalculator(double a, double b, double c, double d) {
+//		FormulaCalculator expected = new FormulaCalculator();
+//		
+//		assertEquals(new FormulaCalculator(a, b, c).calculate(), expected, 0.01);
+//	}
 	
 }
