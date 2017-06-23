@@ -17,7 +17,7 @@ public class Main1Test {
 	@DataProvider
 	public Object[][] dpPositive() {
 		return new Object[][] {
-			new Object[] { 0, 0, 0, 0}, 
+			new Object[] { 0, 0, 0, Float.NaN}, 
 			new Object[] { 1, 2, 2, 1 },
 			new Object[] { -1, 1, 1, -1 },
 			new Object[] { 	2147483647, 1, 10, 	2147483638 },
