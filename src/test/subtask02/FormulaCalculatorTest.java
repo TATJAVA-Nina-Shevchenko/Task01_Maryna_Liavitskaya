@@ -5,9 +5,8 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import main.subtask02.Main2;
-
-public class Main2Test {
+import main.subtask02.FormulaCalculator;
+public class FormulaCalculatorTest {
 
 	@DataProvider
 	public Object[][] dpPositive() {
@@ -19,7 +18,7 @@ public class Main2Test {
 
 	@Test(dataProvider = "dpPositive")
 	public void testPositiveCalculate(double a, double b, double c, double expected) {
-		assertEquals(new Main2().calculate(a, b, c), expected, 0.01);
+		assertEquals(new FormulaCalculator(a, b, c).calculate(), expected, 0.01);
 
 	}
 	
