@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 import util.DigitUtil;
 
 public class DigitalUtilTest {
-	private final double delta = 0.001;
 
 	@Test(dataProvider = "dpPositiveCheckLength")
 	public void testPositiveCheckLength(String[] args, int permissibleLength) {
