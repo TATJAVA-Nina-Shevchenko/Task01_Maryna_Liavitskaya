@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import main.subtask03.Triangle;
 
 public class TriangleTest {
-	private static final double delta = 0.001;
+	private static final double delta = 0.001; //accuracy
 
 	@Test(dataProvider = "dpPositiveHypotrnuse")
 	public void testPositiveCalculateHypotenuse(double a, double b, double expectedHypotenuse) {
